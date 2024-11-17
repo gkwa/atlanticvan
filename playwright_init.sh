@@ -10,6 +10,8 @@ pnpm --version
 
 git init
 pnpm create playwright --browser=chromium --install-deps --quiet --gha --lang=Typescript
+echo node_modules >>.gitignore
+
 git add -A
 git commit -am "scaffold playwright"
 
