@@ -22,19 +22,12 @@ jobs:
       - uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af
         with:
           node-version: lts/*
-      - name: Cache Linux Dependencies
-        if: matrix.os == 'ubuntu-latest'
-        id: cache-linux-deps
-        uses: actions/cache@v4
-        with:
-          path: /var/cache/apt
-          key: ${{ runner.os }}-apt-${{ hashFiles('**/package-lock.json') }}
       - name: Install Linux Dependencies
         if: matrix.os == 'ubuntu-latest'
         run: |
-          sudo chmod 777 /var/cache/apt
           sudo apt-get update
-          sudo apt-get install --assume-yes git xvfb libglib2.0-0 libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libdbus-1-3 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libpango-1.0-0 libcairo2 libasound2 libatspi2.0-0
+          sudo apt-get install --assume-yes git
+          sudo apt-get install --assume-yes xvfb libglib2.0-0 libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libdbus-1-3 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libpango-1.0-0 libcairo2 libasound2 libatspi2.0-0
       - name: Install MacOS Dependencies
         if: matrix.os == 'macOS-latest'
         run: |
