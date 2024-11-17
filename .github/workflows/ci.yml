@@ -43,7 +43,7 @@ jobs:
         run: bash -xe playwright_init.sh
       - run: pnpm add prettier
       - run: pnpm prettier --ignore-path=.prettierignore --config=.prettierrc.json --write .
-      - uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5
+      - uses: EndBug/add-and-commit@43eaafb140bdacd4907fa7384fdd5cd271f58171
         with:
           add: .
           message: "chore: append date to data.txt [skip ci]"
