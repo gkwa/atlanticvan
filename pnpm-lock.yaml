@@ -6,9 +6,9 @@ settings:
 
 importers:
   .:
-    devDependencies:
+    dependencies:
       prettier:
-        specifier: 3.3.3
+        specifier: ^3.3.3
         version: 3.3.3
 
 packages:
