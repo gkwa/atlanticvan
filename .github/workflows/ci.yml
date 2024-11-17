@@ -43,7 +43,7 @@ jobs:
       - name: Scaffold a new playwright project
         run: bash -xe playwright_init.sh
       - name: Install prettier
-        run: pnpm install
+        run: pnpm install --dir=.
       - run: pnpm prettier --ignore-path=.prettierignore --config=.prettierrc.json --write .
       - uses: EndBug/add-and-commit@43eaafb140bdacd4907fa7384fdd5cd271f58171
         with:
