@@ -16,6 +16,7 @@ git add -A
 git commit -am "scaffold playwright"
 
 pnpm add --save-dev --save-exact typescript
+pnpm add --save-dev --save-exact prettier
 git commit -am "add typescript"
 
 cat package.json

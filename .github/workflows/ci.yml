@@ -39,7 +39,6 @@ jobs:
           git config --global user.name "Your Name"
       - name: Scaffold a new playwright project
         run: bash -xe playwright_init.sh
-      - run: pnpm add prettier
       - run: pnpm prettier --ignore-path=.prettierignore --config=.prettierrc.json --write .
       - uses: EndBug/add-and-commit@43eaafb140bdacd4907fa7384fdd5cd271f58171
         with:
