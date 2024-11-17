@@ -2,7 +2,7 @@
 
 apt-get update
 
-apt-get install --assume-yes curl git
+apt-get install --assume-yes curl
 
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 apt-get --assume-yes install nodejs
