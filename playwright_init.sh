@@ -4,7 +4,6 @@ rm -rf myproject
 mkdir -p myproject
 cd myproject || exit 1
 
-corepack enable
 corepack prepare pnpm@latest --activate
 pnpm --version
 
