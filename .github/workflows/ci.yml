@@ -37,7 +37,7 @@ jobs:
         run: bash -xe playwright_init.sh
       - name: Install prettier
         run: pnpm install prettier
-      - run: prettier --ignore-path=.prettierignore --config=.prettierrc.json --write .
+      - run: pnpm prettier --ignore-path=.prettierignore --config=.prettierrc.json --write .
       - uses: EndBug/add-and-commit@43eaafb140bdacd4907fa7384fdd5cd271f58171
         with:
           add: .
