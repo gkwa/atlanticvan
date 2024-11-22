@@ -10,7 +10,7 @@ name: Build & Test
     - cron: 01 13 * * SAT
 jobs:
   ubuntu:
-    name: Build & Test (${{ matrix.os }})
+    name: Build & Test (ubuntu-latest)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@cbb722410c2e876e24abbe8de2cc27693e501dcb
@@ -46,7 +46,7 @@ jobs:
           github_token: ${{ secrets.WORKFLOW_TOKEN }}
   macos:
     needs: ubuntu
-    name: Build & Test (${{ matrix.os }})
+    name: Build & Test (macOS-latest)
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@cbb722410c2e876e24abbe8de2cc27693e501dcb
@@ -77,7 +77,7 @@ jobs:
           github_token: ${{ secrets.WORKFLOW_TOKEN }}
   windows:
     needs: macos
-    name: Build & Test (${{ matrix.os }})
+    name: Build & Test (windows-latest)
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@cbb722410c2e876e24abbe8de2cc27693e501dcb
