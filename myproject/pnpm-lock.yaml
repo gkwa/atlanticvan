@@ -11,14 +11,14 @@ importers:
         specifier: ^1.49.0
         version: 1.49.0
       "@types/node":
-        specifier: ^22.9.1
-        version: 22.9.1
+        specifier: ^22.9.3
+        version: 22.9.3
       prettier:
         specifier: 3.3.3
         version: 3.3.3
       typescript:
-        specifier: 5.6.3
-        version: 5.6.3
+        specifier: 5.7.2
+        version: 5.7.2
 
 packages:
   "@playwright/test@1.49.0":
@@ -29,10 +29,10 @@ packages:
     engines: { node: ">=18" }
     hasBin: true
 
-  "@types/node@22.9.1":
+  "@types/node@22.9.3":
     resolution:
       {
-        integrity: sha512-p8Yy/8sw1caA8CdRIQBG5tiLHmxtQKObCijiAa9Ez+d4+PRffM4054xbju0msf+cvhJpnFEeNjxmVT/0ipktrg==,
+        integrity: sha512-F3u1fs/fce3FFk+DAxbxc78DF8x0cY09RRL8GnXLmkJ1jvx3TtPdWoTT5/NiYfI5ASqXBmfqJi9dZ3gxMx4lzw==,
       }
 
   fsevents@2.3.2:
@@ -67,10 +67,10 @@ packages:
     engines: { node: ">=14" }
     hasBin: true
 
-  typescript@5.6.3:
+  typescript@5.7.2:
     resolution:
       {
-        integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==,
+        integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==,
       }
     engines: { node: ">=14.17" }
     hasBin: true
@@ -86,7 +86,7 @@ snapshots:
     dependencies:
       playwright: 1.49.0
 
-  "@types/node@22.9.1":
+  "@types/node@22.9.3":
     dependencies:
       undici-types: 6.19.8
 
@@ -103,6 +103,6 @@ snapshots:
 
   prettier@3.3.3: {}
 
-  typescript@5.6.3: {}
+  typescript@5.7.2: {}
 
   undici-types@6.19.8: {}
