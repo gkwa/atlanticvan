@@ -38,7 +38,7 @@ jobs:
       - name: Install prettier
         run: pnpm install prettier
       - run: pnpm prettier --ignore-path=.prettierignore --config=.prettierrc.json --write .
-      - uses: EndBug/add-and-commit@8c5cdcb4e6b4ae2c76cde807552634e4485b17bf
+      - uses: EndBug/add-and-commit@2afad56181d84749b0d88d950978f238c741f9c9
         with:
           add: .
           message: "chore: lint files [skip ci]"
@@ -69,7 +69,7 @@ jobs:
       - name: Install prettier
         run: pnpm install prettier
       - run: pnpm prettier --ignore-path=.prettierignore --config=.prettierrc.json --write .
-      - uses: EndBug/add-and-commit@8c5cdcb4e6b4ae2c76cde807552634e4485b17bf
+      - uses: EndBug/add-and-commit@2afad56181d84749b0d88d950978f238c741f9c9
         with:
           add: .
           message: "chore: lint files [skip ci]"
@@ -100,7 +100,7 @@ jobs:
       - name: Install prettier
         run: pnpm install prettier
       - run: pnpm prettier --ignore-path=.prettierignore --config=.prettierrc.json --write .
-      - uses: EndBug/add-and-commit@8c5cdcb4e6b4ae2c76cde807552634e4485b17bf
+      - uses: EndBug/add-and-commit@2afad56181d84749b0d88d950978f238c741f9c9
         with:
           add: .
           message: "chore: lint files [skip ci]"
