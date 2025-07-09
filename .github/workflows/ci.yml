@@ -13,7 +13,7 @@ jobs:
     name: Build & Test (ubuntu-latest)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@cbb722410c2e876e24abbe8de2cc27693e501dcb
+      - uses: actions/checkout@09d2acae674a48949e3602304ab46fd20ae0c42f
         with:
           token: ${{ secrets.WORKFLOW_TOKEN }}
           ref: ${{ github.head_ref || github.ref_name }}
@@ -21,7 +21,7 @@ jobs:
         run: |
           git fetch --unshallow --tags
           git pull origin master
-      - uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af
+      - uses: actions/setup-node@08f58d1471bff7f3a07d167b4ad7df25d5fcfcb6
         with:
           node-version: lts/*
       - name: Install Linux Dependencies
@@ -49,7 +49,7 @@ jobs:
     name: Build & Test (macOS-latest)
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@cbb722410c2e876e24abbe8de2cc27693e501dcb
+      - uses: actions/checkout@09d2acae674a48949e3602304ab46fd20ae0c42f
         with:
           token: ${{ secrets.WORKFLOW_TOKEN }}
           ref: ${{ github.head_ref || github.ref_name }}
@@ -57,7 +57,7 @@ jobs:
         run: |
           git fetch --unshallow --tags
           git pull origin master
-      - uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af
+      - uses: actions/setup-node@08f58d1471bff7f3a07d167b4ad7df25d5fcfcb6
         with:
           node-version: lts/*
       - name: Configure Git
@@ -80,7 +80,7 @@ jobs:
     name: Build & Test (windows-latest)
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@cbb722410c2e876e24abbe8de2cc27693e501dcb
+      - uses: actions/checkout@09d2acae674a48949e3602304ab46fd20ae0c42f
         with:
           token: ${{ secrets.WORKFLOW_TOKEN }}
           ref: ${{ github.head_ref || github.ref_name }}
@@ -88,7 +88,7 @@ jobs:
         run: |
           git fetch --unshallow --tags
           git pull origin master
-      - uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af
+      - uses: actions/setup-node@08f58d1471bff7f3a07d167b4ad7df25d5fcfcb6
         with:
           node-version: lts/*
       - name: Configure Git
