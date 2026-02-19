@@ -21,7 +21,7 @@ jobs:
         run: |
           git fetch --unshallow --tags
           git pull origin master
-      - uses: actions/setup-node@d02c89dce7e1ba9ef629ce0680989b3a1cc72edb
+      - uses: actions/setup-node@efcb663fc60e97218a2b2d6d827f7830f164739e
         with:
           node-version: lts/*
       - name: Install Linux Dependencies
@@ -57,7 +57,7 @@ jobs:
         run: |
           git fetch --unshallow --tags
           git pull origin master
-      - uses: actions/setup-node@d02c89dce7e1ba9ef629ce0680989b3a1cc72edb
+      - uses: actions/setup-node@efcb663fc60e97218a2b2d6d827f7830f164739e
         with:
           node-version: lts/*
       - name: Configure Git
@@ -88,7 +88,7 @@ jobs:
         run: |
           git fetch --unshallow --tags
           git pull origin master
-      - uses: actions/setup-node@d02c89dce7e1ba9ef629ce0680989b3a1cc72edb
+      - uses: actions/setup-node@efcb663fc60e97218a2b2d6d827f7830f164739e
         with:
           node-version: lts/*
       - name: Configure Git
